@@ -10,6 +10,21 @@
     --very-dark-blue: hsl(240, 100%, 5%);
 }
 
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('ttf') tech('variations'),
+    url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('ttf-variations');
+    font-weight: 400 800;
+}
+
+body {
+    font-family: Inter !important;
+}
+
+.nav-links li a:hover {
+    color: var(--soft-red) !important;
+}
+
 .navbar-toggler {
     border: none;
     display: flex;
@@ -35,8 +50,116 @@
     width: 250px !important;
 }
 
+.web-3-img-mob-div {
+    display: none;
+}
+
+h1 {
+    color: var(--very-dark-blue);
+}
+
+.lead-text {
+    color: var(--dark-grayish-blue);
+    font-weight: 500;
+}
+
+.read-more-btn {
+    background-color: var(--soft-red);
+    color: var(--off-white);
+}
+
+.read-more-btn:hover, .read-more-btn:active, .read-more-btn:focus-visible {
+    background-color: var(--very-dark-blue) !important;
+    color: var(--off-white) !important;
+}
+
+.rt-artic-cont {
+    background-color: var(--very-dark-blue);
+}
+
+.rt-artic-cont h2 {
+    color: var(--soft-orange);
+}
+
+.rt-artic-card {
+    background-color: inherit;
+}
+
+.rt-artic-card h3 {
+    color: var(--off-white);
+}
+
+.rt-artic-card a:hover, .rt-artic-card a:active {
+    color: var(--soft-red);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: .1s ease-in;
+}
+
+.rt-artic-card p {
+    color: var(--grayish-blue);
+}
+
+.bot-card {
+    flex-direction: row !important;
+}
+
+.bot-card-body {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+}
+
+.bot-card-num {
+    font-size: 2.2em;
+    font-weight: 800;
+    color:var(--grayish-blue);
+}
+
+.bot-card-title {
+    font-size: 1.3em;
+    color: var(--very-dark-blue);
+    font-weight: bold;
+}
+
+.bot-card-title a:hover,.bot-card-title a:active {
+    color: var(--soft-red);
+}
+
+.bot-card-text {
+    font-size: 1.1em;
+    color: var(--dark-grayish-blue);
+}
+
 @media (min-width: 768px) {
     .offcanvas {
         display: none !important;
+    }
+}
+
+@media (max-width: 765px) {
+    .rt-artic-cont {
+        max-width: 92vw;
+    }
+
+    .bot-card-body {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 576px) {
+    .web-3-img-mob-div {
+        display: block;
+    }
+
+    .web-3-img-desk-div {
+        display: none;
+    }
+
+    .bot-card-body {
+        font-size: 1em;
     }
 }

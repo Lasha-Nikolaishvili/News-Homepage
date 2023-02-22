@@ -1,49 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- displays site properly based on user's device -->
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- displays site properly based on user's device -->
 
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./assets/images/favicon-32x32.png"
-		/>
+	<link
+		rel="icon"
+		type="image/png"
+		sizes="32x32"
+		href="./assets/images/favicon-32x32.png"
+	/>
 
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-		/>
-		<link rel="stylesheet" href="app.css" />
-		<title>Frontend Mentor | News homepage</title>
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+	/>
+	<link rel="stylesheet" href="app.css" />
+	<title>Frontend Mentor | News homepage</title>
 
-		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
-	</head>
-	<body>
-		<header>
-			<nav class="navbar navbar-expand-md">
-				<div class="container-fluid">
-				  <a class="navbar-brand" href="#">
-					<img src="./assets/images/logo.svg" alt="">
-				  </a>
-				  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
-					<span class="nav-line"></span>
-					<span class="nav-line"></span>
-					<span class="nav-line"></span>
-				  </button>
-				  	<div class="collapse navbar-collapse" id="navbarNav">
-						<ul class="navbar-nav ms-auto">
+	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+	<style>
+		.attribution {
+			font-size: 11px;
+			text-align: center;
+		}
+		.attribution a {
+			color: hsl(228, 45%, 44%);
+		}
+	</style>
+</head>
+<body class="p-md-3">
+	<header>
+		<nav class="navbar navbar-expand-md">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+				<img src="./assets/images/logo.svg" alt="">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+				<span class="nav-line"></span>
+				<span class="nav-line"></span>
+				<span class="nav-line"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto nav-links">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">New</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Popular</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link"  href="#">Trending</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link"  href="#">Categories</a>
+						</li>
+					</ul>
+				</div>
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+					<div class="offcanvas-header">
+						<button type="button" class="btn-close ms-auto fs-1" data-bs-dismiss="offcanvas"></button>
+					</div>
+					<div class="offcanvas-body">
+						<ul class="navbar-nav nav-links">
 							<li class="nav-item">
 								<a class="nav-link" href="#">Home</a>
 							</li>
@@ -60,80 +83,86 @@
 								<a class="nav-link"  href="#">Categories</a>
 							</li>
 						</ul>
-				  	</div>
-					<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
-						<div class="offcanvas-header">
-							<button type="button" class="btn-close ms-auto fs-1" data-bs-dismiss="offcanvas"></button>
-						</div>
-						<div class="offcanvas-body">
-							<ul class="navbar-nav">
-								<li class="nav-item">
-								  <a class="nav-link" href="#">Home</a>
-								</li>
-								<li class="nav-item">
-								  <a class="nav-link" href="#">New</a>
-								</li>
-								<li class="nav-item">
-								  <a class="nav-link" href="#">Popular</a>
-								</li>
-								<li class="nav-item">
-								  <a class="nav-link"  href="#">Trending</a>
-								</li>
-								<li class="nav-item">
-								  <a class="nav-link"  href="#">Categories</a>
-								</li>
-							</ul>
-						</div>
 					</div>
 				</div>
-			  </nav>
-		</header>
-
-	<!--
-  Home
-  New
-  Popular
-  Trending
-  Categories
-
-  The Bright Future of Web 3.0?
-
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
-
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-		<div class="attribution">
-			Challenge by
-			<a
-				href="https://www.frontendmentor.io?ref=challenge"
-				target="_blank"
-				>Frontend Mentor</a
-			>. Coded by <a href="https://github.com/Lasha-Nikolaishvili">Lasha Nikolaishvili</a>.
+			</div>
+			</nav>
+	</header>
+	<main class="container-fluid">
+		<div class="row mb-5 mt-3 gy-5 gx-md-5 gy-md-0">
+			<div class="col-md-9 d-grid">
+				<div class="row row-cols-md-2">
+					<div class="col-md-12 mb-4 web-3-img-desk-div"><img class="img-fluid justify-self-stretch" src="./assets/images/image-web-3-desktop.jpg" alt=""></div>
+					<div class="col-md-12 mb-4 web-3-img-mob-div"><img class="img-fluid" src="./assets/images/image-web-3-mobile.jpg" alt=""></div>
+					<div class="col-md-6">
+						<h1 class="display-1 fw-bold">The Bright Future of Web 3.0?</h1>
+					</div>
+					<div class="col-md-6 d-flex flex-column justify-content-between">
+						<p class="lead lead-text">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+							But is it really fulfilling its promise?</p>
+						<div class="btn read-more-btn rounded-0 py-3 px-5 align-self-start">R E A D &ThickSpace; M O R E</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 rt-artic-cont p-4 mx-auto d-flex flex-column justify-content-between">
+				<h2 class="fs-1 fw-bold">New</h2>
+				<div class="card rt-artic-card">
+					<h3 class="card-title fs-4"><a href="#">Hydrogen VS Electric Cars</a></h3>
+					<p class="card-text">Will hydrogen-fueled cars ever catch up to EVs?</p>
+					<hr class="text-white">
+				</div>
+				<div class="card rt-artic-card">
+					<h3 class="card-title fs-4"><a href="#">The Downsides of AI Artistry</a></h3>
+					<p class="card-text">What are the possible adverse effects of on-demand AI image generation?</p>
+					<hr class="text-white">
+				</div>
+				<div class="card rt-artic-card">
+					<h3 class="card-title fs-4"><a href="#">Is VC Funding Drying Up?</a></h3>
+					<p class="card-text">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+				</div>
+			</div>
 		</div>
-	</body>
+		<div class="row g-5 gx-1">
+			<div class="col-md-4">
+				<div class="row card g-0 border-0 rounded-0 bot-card">
+					<img class="img-fluid col-4 rounded-0" src="./assets/images/image-retro-pcs.jpg" alt="Image of a retro pc.">
+					<div class="card-body py-0 col-8 bot-card-body pe-0">
+						<p class="bot-card-num m-0">01</p>
+						<h3 class="card-title bot-card-title m-0"><a href="#">Reviving Retro PCs</a></h3>
+						<p class="card-text bot-card-text">What happens when old PCs are given modern upgrades?</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="row card g-0 border-0 rounded-0 bot-card">
+					<img class="img-fluid col-4 rounded-0" src="./assets/images/image-top-laptops.jpg" alt="Image of a laptop.">
+					<div class="card-body py-0 col-8 bot-card-body pe-0">
+						<p class="bot-card-num m-0">02</p>
+						<h3 class="card-title bot-card-title m-0"><a href="#">Top 10 Laptops of 2022</a></h3>
+						<p class="card-text bot-card-text">Our best picks for various needs and budgets.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="row card g-0 border-0 rounded-0 bot-card">
+					<img class="img-fluid col-4 rounded-0" src="./assets/images/image-gaming-growth.jpg" alt="Image of a joystic hovering over a persons hand.">
+					<div class="card-body py-0 col-8 bot-card-body pe-0">
+						<p class="bot-card-num m-0">03</p>
+						<h3 class="card-title bot-card-title m-0"><a href="#">The Growth of Gaming</a></h3>
+						<p class="card-text bot-card-text">How the pandemic has sparked fresh opportunities.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+	<div class="attribution">
+		Challenge by
+		<a
+			href="https://www.frontendmentor.io?ref=challenge"
+			target="_blank"
+			>Frontend Mentor</a
+		>. Coded by <a href="https://github.com/Lasha-Nikolaishvili">Lasha Nikolaishvili</a>.
+	</div>
+</body>
 </html>
