@@ -169,3 +169,21 @@ a {
         font-size: 1em;
     }
 }
+
+@media (min-width: 1500px) {
+    body {
+        font-size: 25px !important;
+    }
+}
+
+@media (min-width: 1800px) {
+    body {
+        font-size: 28px !important;
+    }
+}
+
+@media (min-width: 2000px) {
+    body {
+        font-size: 30px !important;
+    }
+}
